@@ -1,0 +1,16 @@
+<main>
+    <h2><span>03</span>Space Launch 101</h2>
+    <section>
+        <nav>
+            <button (click)="changeTech(0)">1</button>
+            <button (click)="changeTech(1)">2</button>
+            <button (click)="changeTech(2)">3</button>
+        </nav>
+        <div class="info">
+            <h2>The Terminology...</h2>
+            <h1>{{ technology[techNumber].name }}</h1>
+            <p>{{ technology[techNumber].description }}</p>
+        </div>
+        <img src="../../../{{technology[techNumber].images.portrait}}" alt="technology-image">
+    </section>
+</main>

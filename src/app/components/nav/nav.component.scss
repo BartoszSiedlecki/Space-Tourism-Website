@@ -1,0 +1,62 @@
+nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0 0 3rem;
+
+    .space-line{
+        margin-left: 3rem;
+        width: 100%;
+        border: .5px solid rgba(255, 255, 255, 0.4);
+    }
+
+    ol{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        width: 100%;
+        padding: 2rem 10rem 2rem 3rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        list-style: none;
+        counter-reset: item;
+        counter-set: item -1;
+
+        li{
+            display: flex;
+            gap: .8rem;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: white;
+            cursor: pointer;
+        }
+
+        li::before{
+            content: "0" counter(item) " "; 
+            counter-increment: item;
+            font-weight: bolder;
+        }
+
+        li::after{
+            display: block;
+            content: "";
+            margin: auto;
+            height: 4px;
+            width: 100%;
+            background-color: white;
+            position: absolute;
+            bottom: -2rem;
+            transform: scaleX(0);
+            transition: ease-in-out .2s;
+        }
+
+        li:hover::after{
+            transform: scaleX(1)
+        }
+    }
+}

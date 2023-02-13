@@ -1,0 +1,50 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../../assets/home/background-home-desktop.jpg);
+    background-position: top left;
+    background-size: cover;
+    color: white;
+    padding: 22rem 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h2{
+        font-size: 2rem;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
+    h1{
+        font-size: 9rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: .8rem;
+    }
+
+    p{
+        width: 32rem;
+        font-size: 1.5rem;
+    }
+
+    button{
+        position: absolute;
+        right: 10rem;
+        bottom: 10rem;
+        height: 18rem;
+        width: 18rem;
+        border-radius: 100%;
+        border: none;
+        font-size: 2rem;
+        font-weight: 100;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: box-shadow ease-in-out .5s;
+
+        &:hover{
+            box-shadow: 0 0 0 5rem rgba(255, 255, 255, 0.2);
+        }
+    }
+}

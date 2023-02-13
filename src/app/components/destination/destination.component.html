@@ -1,0 +1,29 @@
+<main>
+    <h2><span>01</span>Pick your destination</h2>
+    <section>
+        <img src="../../../{{ planets[planetNumber].images.png }}" alt="moon">
+        <div class="planets">
+            <ul>
+                <li (click)="changePlanet(0)">{{ planets[0].name }}</li>
+                <li (click)="changePlanet(1)">{{ planets[1].name }}</li>
+                <li (click)="changePlanet(2)">{{ planets[2].name }}</li>
+                <li (click)="changePlanet(3)">{{ planets[3].name }}</li>
+            </ul>
+            <h1>{{ planets[planetNumber].name }}</h1>
+            <p>
+                {{ planets[planetNumber].description }}
+            </p>
+            <hr>
+            <div class="additional-info">
+                <div>
+                    <h3>Avg. Distance</h3>
+                    <span>{{ planets[planetNumber].distance }}</span>
+                </div>
+                <div>
+                    <h3>Est. Travel Time</h3>
+                    <span>{{ planets[planetNumber].travel }}</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

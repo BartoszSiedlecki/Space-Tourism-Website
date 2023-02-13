@@ -1,0 +1,19 @@
+<main>
+    <h2><span>02</span>Meet your crew</h2>
+    <div>
+        <section class="crewmate-info">
+            <h3>{{ crew[crewMateNumber].role }}</h3>
+            <h1>{{ crew[crewMateNumber].name }}</h1>
+            <p>
+                {{ crew[crewMateNumber].bio }}
+            </p>
+            <div class="switch-crew">
+                <button (click)="changeCrewmate(0)"></button>
+                <button (click)="changeCrewmate(1)"></button>
+                <button (click)="changeCrewmate(2)"></button>
+                <button (click)="changeCrewmate(3)"></button>
+            </div>
+        </section>
+        <img src="../../{{ crew[crewMateNumber].images.png}}" alt="crewmate">
+    </div>
+</main>
