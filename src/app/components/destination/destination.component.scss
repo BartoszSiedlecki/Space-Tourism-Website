@@ -24,15 +24,16 @@ main{
 section{
     display: flex;
     align-items: center;
-    padding: 4rem;
-    padding-top: 6rem;
-    display: flex;
-    gap: 12rem;
+    justify-content: center;
+    width: 100%;
+    padding-top: 4rem;
+    gap: 15%;
+    
     
     img{
         animation: rotate ease-in-out 150s infinite;
-        width: 45%;
-        height: 45%;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     @keyframes rotate{
@@ -106,5 +107,96 @@ section{
             font-size: 2rem;
             text-transform: uppercase;
         }
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    main{
+        background-image: url(../../../assets/destination/background-destination-tablet.jpg);
+        height: auto;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    section{
+        margin-top: 5rem;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .planets{
+        width: 100%;
+        padding: 5rem;
+        padding-top: 0;
+        align-items: center;
+        text-align: center;
+
+        ul > li{
+            font-size: 1.3rem;
+        }
+
+        h1{
+            margin-top: 3rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        background-image: url(../../../assets/destination/background-destination-mobile.jpg);
+        width: 100%;
+        padding: 2rem;
+        padding-top: 10rem;
+        
+        h2{
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    }
+
+    section{
+        margin-top: 2rem;
+        gap: 1rem;
+        padding: 0;
+        img{
+            padding: 1rem;
+            min-width: 16rem;
+        }
+    }
+
+    .planets{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 4rem;
+        gap: 2rem;
+        ul{
+            margin-top: 2rem;
+            font-size: 1rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+
+            li{
+                font-size: 1rem;
+            }
+        }
+
+        h1{
+            font-size: 6rem;
+        }
+
+        hr{
+            width: 100%;
+        }
+    }
+
+    .additional-info{
+        padding-top: 2rem;
+        flex-direction: column;
     }
 }

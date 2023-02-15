@@ -11,9 +11,7 @@ export class CrewComponent implements OnInit {
   crew: Crewmate[] = crewData.crew
   crewMateNumber = 0
 
-  constructor() {
-    console.log(this.crew)
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }

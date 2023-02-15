@@ -11,9 +11,7 @@ export class DestinationComponent implements OnInit {
   planets: Planet[] = planetsData.destinations
   planetNumber = 0
 
-  constructor() {
-    console.log(this.planets[0])
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }

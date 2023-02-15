@@ -80,3 +80,95 @@ main{
         }
     }
 }
+
+@media only screen and (max-width: 1250px) {
+    main{
+        background-image: url(../../../assets/crew/background-crew-tablet.jpg);
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 0;
+        height: auto;
+        width: 100%;
+
+
+        div{
+            padding-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0;
+            width: 100%;
+
+            img{
+                position: static;
+                margin-top: 6rem;
+            }
+        }
+    }
+
+    .crewmate-info{
+        align-items: center;
+        text-align: center;
+
+        .switch-crew{
+            padding-top: 8rem;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 10rem;
+
+        h2{
+            display: flex;
+            justify-content: center;
+            font-size: 1.4rem;
+        }
+
+        div{
+            flex-direction: column-reverse;
+
+            img{
+                margin-top: 0;
+                width: 100%;
+                padding-left: 5rem;
+                padding-right: 5rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    .crewmate-info{
+        position: relative;
+        padding-top: 8rem;
+        gap: 0rem;
+
+        h3{
+            font-size: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        h1{
+            font-size: 1.8rem;
+        }
+
+        p{
+            width: 100%;
+            padding: 2rem;
+            font-size: 1.1rem;
+
+        }
+
+        .switch-crew{
+            position: absolute;
+            top: 0;
+        }
+    }
+}
