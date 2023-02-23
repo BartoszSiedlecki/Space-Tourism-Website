@@ -1,23 +1,19 @@
 import { Component } from '@angular/core';
-import { trigger, state, style, animate, transition, query, group } from '@angular/animations';
+import { RouterOutlet } from '@angular/router';
+import { fader } from './route-animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    trigger('fade', [
-      transition(':enter', [
-        style({ opacity: 0 }),
-        animate(1000, style({ opacity: 1 }))
-      ]),
-      transition(':leave', [
-        style({ opacity: 1 }),
-        animate(1000, style({ opacity: 0 }))
-      ])
-    ])
+    fader,
   ]
 })
 export class AppComponent {
   title = 'space-tourism';
+
+  prepareRoute(outlet: RouterOutlet){
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData["animation"]
+  }
 }

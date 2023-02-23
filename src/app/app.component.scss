@@ -1,0 +1,15 @@
+.nav-bar{
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.content{
+    animation: fade-in ease-in-out .6s;
+}
+
+@keyframes fade-in{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}

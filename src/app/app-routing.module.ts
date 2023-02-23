@@ -7,9 +7,9 @@ import { TechnologyComponent } from './components/technology/technology.componen
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'destination', component: DestinationComponent},
-  {path: 'crew', component: CrewComponent},
-  {path: 'technology', component: TechnologyComponent}
+  {path: 'destination', component: DestinationComponent, data:{ animation: 'dest'}},
+  {path: 'crew', component: CrewComponent, data:{ animation: 'crew'}},
+  {path: 'technology', component: TechnologyComponent, data:{ animation: 'tech'}}
 ];
 
 @NgModule({
